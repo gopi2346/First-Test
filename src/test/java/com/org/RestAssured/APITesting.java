@@ -15,6 +15,16 @@ public class APITesting {
 		
 			RestAssured.baseURI = "https://rahulshettyacademy.com";
 			
+			practicePojo pj = new practicePojo();
+			pj.setLocation(new Location(123,456));
+			pj.setAccuracy("100");
+			pj.setName("Gopi");
+			pj.setPhone_number("1234567890");
+			pj.setAddress("123, Tamil Nadu, India");
+			pj.setTypes(null);
+			pj.setWebsite("www.gopi.com");
+			pj.setLanguage("English");
+			
 			String response = RestAssured.given().body(RequestData.createPlace("Gopi", "1000, Tamil Nadu, India"))
 			.queryParam("key", "qaclick123")
 			.when().post("/maps/api/place/add/json")
