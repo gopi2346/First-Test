@@ -7,7 +7,8 @@ import io.restassured.RestAssured;
 import io.restassured.path.json.JsonPath;
 
 public class APITesting {
-	
+
+	//API Testing
 	public static void main(String[] args) {
 			
 			String name = "Gopi";
