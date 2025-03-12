@@ -2,7 +2,7 @@ package com.org.RestAssured;
 
 public class RequestData {
 
-	
+	// This is RestAssured project
 	public static String createPlace(String name, String address) {
 		return "{\r\n"
 				+ "  \"location\": {\r\n"
